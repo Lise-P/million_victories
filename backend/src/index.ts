@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import router from "./routes/router";
-import showRepository from "./showRepository"; 
+import showRepository from "./showRepository";
 
 dotenv.config();
 const app = express();
