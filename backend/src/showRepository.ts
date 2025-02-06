@@ -7,6 +7,7 @@ type Show = {
 	name: string;
 	summary: string;
 	language: string;
+	image: string;
 };
 
 function removeHtmlTags(str: string): string {
@@ -17,7 +18,7 @@ class ShowRepository {
 	async readAll(): Promise<Show[]> {
 		const [results] = await connection
 			.promise()
-			.query<RowDataPacket[]>("SELECT * FROM shows LIMIT 10");
+			.query<RowDataPacket[]>("SELECT * FROM shows LIMIT 20");
 		return results as Show[];
 	}
 
@@ -34,19 +35,23 @@ class ShowRepository {
 			const shows = await response.json();
 
 			for (const show of shows) {
-				const { id, name, summary, language } = show;
-
+				console.log(show);
+				const { id, name, summary, language, image } = show;
+				const imageUrl = image?.original || "";
+				console.log(imageUrl);
 				const [existing] = await connection
 					.promise()
 					.query<RowDataPacket[]>("SELECT * FROM shows WHERE id = ?", [id]);
 
 				if (existing.length === 0) {
+					console.log("Insertion de : ", [id, name, summary, language, imageUrl])
 					await connection
 						.promise()
 						.query(
-							"INSERT INTO shows (id, name, summary, language) VALUES (?, ?, ?, ?)",
-							[id, name, summary, language],
+							"INSERT INTO shows (id, name, summary, language, image) VALUES (?, ?, ?, ?, ?)",
+							[id, name, summary, language, imageUrl],
 						);
+						console.log("Insertion réussie");
 				}
 			}
 
