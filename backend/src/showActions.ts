@@ -1,7 +1,7 @@
 import type { RequestHandler } from "express";
 import showRepository from "./showRepository";
 
-// 🔹 Browse - Lire toutes les séries (READ ALL)
+// Browse pour lire toutes les séries
 const browse: RequestHandler = async (req, res, next) => {
 	try {
 		const shows = await showRepository.readAll();
@@ -11,7 +11,7 @@ const browse: RequestHandler = async (req, res, next) => {
 	}
 };
 
-// 🔹 Read - Lire une série par ID (READ ONE)
+// 🔹 read pour lire une série avec une id
 const read: RequestHandler = async (req, res, next) => {
 	try {
 		const showId = Number.parseInt(req.params.id);
@@ -32,7 +32,7 @@ const read: RequestHandler = async (req, res, next) => {
 	}
 };
 
-// 🔹 Read Random - Obtenir une série aléatoire
+// pour obtenir une série aléatoirement
 const random: RequestHandler = async (req, res, next) => {
 	try {
 		const show = await showRepository.random();
@@ -46,5 +46,4 @@ const random: RequestHandler = async (req, res, next) => {
 	}
 };
 
-// 🔹 Exporter les contrôleurs
 export default { browse, read, random };
