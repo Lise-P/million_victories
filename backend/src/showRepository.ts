@@ -13,7 +13,7 @@ class ShowRepository {
 	async readAll(): Promise<Show[]> {
 		const [results] = await connection
 			.promise()
-			.query<RowDataPacket[]>("SELECT * FROM shows");
+			.query<RowDataPacket[]>("SELECT * FROM shows LIMIT 10");
 		return results as Show[];
 	}
 
@@ -21,13 +21,6 @@ class ShowRepository {
 		const [results] = await connection
 			.promise()
 			.query<RowDataPacket[]>("SELECT * FROM shows WHERE id = ?", [id]);
-		return results.length > 0 ? (results[0] as Show) : null;
-	}
-
-	async random(): Promise<Show | null> {
-		const [results] = await connection
-			.promise()
-			.query<RowDataPacket[]>("SELECT * FROM shows ORDER BY RAND() LIMIT 1");
 		return results.length > 0 ? (results[0] as Show) : null;
 	}
 
