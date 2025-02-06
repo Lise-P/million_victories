@@ -32,18 +32,5 @@ const read: RequestHandler = async (req, res, next) => {
 	}
 };
 
-// pour obtenir une série aléatoirement
-const random: RequestHandler = async (req, res, next) => {
-	try {
-		const show = await showRepository.random();
-		if (show == null) {
-			res.sendStatus(404);
-		} else {
-			res.json(show);
-		}
-	} catch (err) {
-		next(err);
-	}
-};
 
-export default { browse, read, random };
+export default { browse, read };

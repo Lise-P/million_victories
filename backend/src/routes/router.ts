@@ -11,6 +11,4 @@ router.get("/api/shows", showActions.browse);
 
 router.get("/api/shows/:id", showActions.read);
 
-router.get("/api/shows/random", showActions.random);
-
 export default router;
