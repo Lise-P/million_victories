@@ -9,6 +9,10 @@ type Show = {
 	language: string;
 };
 
+function removeHtmlTags(str: string): string {
+	return str.replace(/<[^>]*>/g, ""); // Remplace les balises HTML par une chaîne vide
+}
+
 class ShowRepository {
 	async readAll(): Promise<Show[]> {
 		const [results] = await connection
