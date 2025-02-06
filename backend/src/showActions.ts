@@ -13,8 +13,11 @@ const browse: RequestHandler = async (req, res, next) => {
     
     // Nettoyer les summaries ici avant d'envoyer la réponse
     const cleanedShows = shows.map(show => ({
-      ...show,
+      id: show.id,
+      name: show.name,
       summary: removeHtmlTags(show.summary),
+      language: show.language,
+      image: show.image || "https://via.placeholder.com/300"
     }));
 
     res.json(cleanedShows);
