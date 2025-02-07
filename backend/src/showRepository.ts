@@ -35,23 +35,19 @@ class ShowRepository {
 			const shows = await response.json();
 
 			for (const show of shows) {
-				console.log(show);
 				const { id, name, summary, language, image } = show;
 				const imageUrl = image.original || "https://via.placeholder.com/300";
-				console.log(imageUrl);
 				const [existing] = await connection
 					.promise()
 					.query<RowDataPacket[]>("SELECT * FROM shows WHERE id = ?", [id]);
 
 				if (existing.length === 0) {
-					console.log("Insertion de : ", [id, name, summary, language, imageUrl])
 					await connection
 						.promise()
 						.query(
 							"INSERT INTO shows (id, name, summary, language, image) VALUES (?, ?, ?, ?, ?)",
 							[id, name, summary, language, imageUrl],
 						);
-						console.log("Insertion réussie");
 				}
 			}
 
