@@ -1,13 +1,3 @@
-## Application Liste des Séries avec Next.js
-
-Il s'agit d'un projet Next.js qui affiche une liste de séries TV avec une barre de recherche et un bouton permettant de trouver une série aléatoire. Les utilisateurs peuvent facilement filtrer la liste des séries et voir leurs informations. L'application comprend également un bouton permettant de charger une série au hasard, ce qui la rend plus interactive.
-Fonctionnalités
-
-    Liste des Séries : Affiche une liste de séries TV récupérées depuis le backend.
-    Barre de Recherche : Permet aux utilisateurs de filtrer la liste en fonction du nom de la série.
-    Bouton Série Aléatoire : Charge et affiche une série aléatoire au clic.
-    V2 : Affichage des Images, page dynamique avec le détail des séries etc.
-
 ## Installation : 
  ## A lire et suivre scrupuleusement pour voir ma super appli ;) 
 
@@ -68,6 +58,18 @@ Lancer le frontend :
 Ouvrez un autre terminal et allez dans le dossier frontend, puis lancez le serveur Next.js avec la commande suivante :
 
     npm run dev
+
+## Application Liste des Séries avec Next.js
+
+Il s'agit d'un projet Next.js qui affiche une liste de séries TV avec une barre de recherche et un bouton permettant de trouver une série aléatoire. Les utilisateurs peuvent facilement filtrer la liste des séries et voir leurs informations. L'application comprend également un bouton permettant de charger une série au hasard, ce qui la rend plus interactive.
+Fonctionnalités
+
+    Liste des Séries : Affiche une liste de séries TV récupérées depuis le backend.
+    Barre de Recherche : Permet aux utilisateurs de filtrer la liste en fonction du nom de la série.
+    Bouton Série Aléatoire : Charge et affiche une série aléatoire au clic.
+    V2 : Affichage des Images, page dynamique avec le détail des séries etc.
+
+
 
 ## Technologies : 
 
