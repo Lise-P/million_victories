@@ -1,4 +1,4 @@
-Application Liste des Séries avec Next.js
+## Application Liste des Séries avec Next.js
 
 Il s'agit d'un projet Next.js qui affiche une liste de séries TV avec une barre de recherche et un bouton permettant de trouver une série aléatoire. Les utilisateurs peuvent facilement filtrer la liste des séries et voir leurs informations. L'application comprend également un bouton permettant de charger une série au hasard, ce qui la rend plus interactive.
 Fonctionnalités
@@ -8,28 +8,66 @@ Fonctionnalités
     Bouton Série Aléatoire : Charge et affiche une série aléatoire au clic.
     Affichage des Images : Affiche les images des séries dans la liste (pour une future mise à jour, voir "v2").
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Installation : 
+1) Cloner le repository :
 
-Installation
+Tout d'abord, clonez le repository sur votre machine :
 
-Cloner ce dépôt et installer les dépendances :
+git clone ccléSSH ou HTTPS
+cd le-repository
 
-git clone <url-du-repository>
-cd <dossier-du-projet>
-npm install   # ou yarn install, ou pnpm install
+2) Ouvrir dans votre éditeur de code préféré :
 
-Variables d'environnement
+Ouvrez le projet dans votre éditeur de code (par exemple, VS Code) :
+code .
 
-Dans le fichier .env.sample, vous trouverez des exemples de variables à définir dans votre propre fichier .env. 
+3) Configurer les variables d'environnement :
+    Copiez le fichier .env.sample en .env et renseignez les informations nécessaires, notamment celles liées à votre base de données MySQL. Voici un exemple des variables que vous devrez définir :
 
-Par exemple :
+    API_URL=http://localhost:5000/api/shows
 
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=movies_db
-API_URL=http://localhost:5000/api/shows
+    DB_HOST=localhost
+    DB_PORT=3306
+    DB_USER=votre_utilisateur_mysql
+    DB_PASSWORD=votre_mot_de_passe_mysql
+    DB_NAME=movies_db
+
+4) Installer les dépendances :
+
+Dans un premier terminal, installez les dépendances pour le frontend :
+cd frontend
+npm install
+
+Ensuite, dans un second terminal, installez les dépendances pour le backend :
+
+    cd backend
+    npm install
+
+5) Configuration de MySQL (Optionnel)
+
+    Se connecter à MySQL : Si vous n'avez pas encore configuré MySQL, assurez-vous d'être connecté à votre serveur MySQL local avec les bonnes informations d'identification. Vous pouvez vous connecter à MySQL avec la commande suivante dans votre terminal :
+
+6) Initialiser la base de données :
+
+Exécutez le script init-db pour créer la database et y insérer la table show. Pour cela, allez dans le dossier backend et exécutez la commande suivante :
+
+    npm run init-db
+
+    Ce script va créer la base de données et les tables nécessaires à l'application.
+
+7) Lancer l'application
+   
+Lancez tout d'abord le terminal du backend, lancez le serveur avec la commande suivante :
+
+npm run dev
+
+Lancer le frontend :
+
+Ouvrez un autre terminal et allez dans le dossier frontend, puis lancez le serveur Next.js avec la commande suivante :
+
+npm run dev
+
+## Technologies : 
 
 Frontend (Next.js)
 
@@ -45,8 +83,12 @@ Backend (Node.js)
     MySQL : Base de données relationnelle utilisée pour stocker les séries.
     dotenv : Pour gérer les variables d'environnement telles que les informations de connexion à la base de données.
 
+
+    
+## Read me par défaut
 ## Getting Started
 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 First, run the development server:
 
 ```bash
