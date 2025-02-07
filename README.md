@@ -33,7 +33,7 @@ API_URL=http://localhost:5000/api/shows
 
 Frontend (Next.js)
 
-    Next.js : Framework React utilisé côté frontend pour gérer le rendu côté serveur (SSR), la génération de pages statiques (SSG) et la gestion des routes.
+    Next.js 
     React : La bibliothèque JavaScript pour la construction de l'interface utilisateur.
     TypeScript : Superset de JavaScript qui ajoute une vérification des types statiques.
     Tailwind CSS : Framework CSS utilitaire pour faciliter la gestion de la mise en page et du design.
@@ -41,7 +41,7 @@ Frontend (Next.js)
 Backend (Node.js)
 
     Node.js : Utilisé pour créer un serveur backend qui sert de point d'API pour l'application. Il se charge de la gestion des requêtes et des données (ici, la récupération des séries à partir d'une base de données MySQL).
-    Express (optionnel) : Si tu utilises Express pour ton serveur Node.js, il sera aussi mentionné ici.
+    Express : Utilisé pour le serveur Node.js
     MySQL : Base de données relationnelle utilisée pour stocker les séries.
     dotenv : Pour gérer les variables d'environnement telles que les informations de connexion à la base de données.
 
