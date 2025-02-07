@@ -1,4 +1,4 @@
-"use client"; // Obligatoire pour useState et useEffect
+"use client"; 
 
 import { useState, useEffect } from "react";
 import ShowList from "./shows/ShowList";

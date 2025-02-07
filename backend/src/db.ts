@@ -1,7 +1,7 @@
 import mysql from "mysql2";
 import dotenv from "dotenv";
 
-// Charger les variables d'environnement à partir du fichier .env
+// Charger les variables d'env à partir du fichier .env
 dotenv.config();
 
 const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
@@ -16,7 +16,7 @@ const connection = mysql.createConnection({
   user: DB_USER,
   password: DB_PASSWORD,
   database: DB_NAME,
-  port: Number(DB_PORT),  // Assurez-vous que DB_PORT est un nombre
+  port: Number(DB_PORT),  
 });
 
 const connectToDatabase = () => {

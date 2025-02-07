@@ -15,14 +15,11 @@ async function initDatabase() {
 
 	console.log("Connexion à MySQL réussie.");
 
-	// Création de la base si elle n'existe pas
 	await connection.query(`CREATE DATABASE IF NOT EXISTS ${DB_NAME}`);
 	console.log(`Base de données "${DB_NAME}" vérifiée.`);
 
-	// Connexion à la base de données
 	await connection.changeUser({ database: DB_NAME });
 
-	// Création de la table show si elle n'existe pas
 	await connection.query(`
         CREATE TABLE IF NOT EXISTS shows (
             id INT AUTO_INCREMENT PRIMARY KEY,
