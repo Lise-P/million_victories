@@ -9,6 +9,8 @@ Fonctionnalités
     Affichage des Images : Affiche les images des séries dans la liste (pour une future mise à jour, voir "v2").
 
 ## Installation : 
+ ## A lire et suivre scrupuleusement pour voir ma super appli ;) 
+
 1) Cloner le repository :
 
 Tout d'abord, clonez le repository sur votre machine :
