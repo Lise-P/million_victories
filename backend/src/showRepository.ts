@@ -37,7 +37,7 @@ class ShowRepository {
 			for (const show of shows) {
 				console.log(show);
 				const { id, name, summary, language, image } = show;
-				const imageUrl = image?.original || "";
+				const imageUrl = image.original || "https://via.placeholder.com/300";
 				console.log(imageUrl);
 				const [existing] = await connection
 					.promise()
