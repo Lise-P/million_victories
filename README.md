@@ -21,7 +21,7 @@ Tout d'abord, clonez le repository sur votre machine :
 2) Ouvrir dans votre éditeur de code préféré :
 
 Ouvrez le projet dans votre éditeur de code (par exemple, VS Code) :
-code .
+    code .
 
 3) Configurer les variables d'environnement :
     Copiez le fichier .env.sample en .env et renseignez les informations nécessaires, notamment celles liées à votre base de données MySQL. Voici un exemple des variables que vous devrez définir :
@@ -37,8 +37,8 @@ code .
 4) Installer les dépendances :
 
 Dans un premier terminal, installez les dépendances pour le frontend :
-cd frontend
-npm install
+    cd frontend
+    npm install
 
 Ensuite, dans un second terminal, installez les dépendances pour le backend :
 
