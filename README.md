@@ -62,7 +62,7 @@ Ce script va créer la base de données et les tables nécessaires à l'applicat
 Lancez tout d'abord le terminal du backend, lancez le serveur avec la commande suivante :
 
     npm run dev
-
+Si vous ne pouvez pas vous connecter au serveur 5000, killez le processus qui utilise le 5000 sur votre ordinateur
 Lancer le frontend :
 
 Ouvrez un autre terminal et allez dans le dossier frontend, puis lancez le serveur Next.js avec la commande suivante :
