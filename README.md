@@ -15,8 +15,8 @@ Fonctionnalités
 
 Tout d'abord, clonez le repository sur votre machine :
 
-git clone ccléSSH ou HTTPS
-cd le-repository
+    git clone ccléSSH ou HTTPS
+    cd le-repository
 
 2) Ouvrir dans votre éditeur de code préféré :
 
