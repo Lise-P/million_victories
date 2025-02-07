@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 b4f41fdbfabbdc42d8f932c71e12a601ee79765c Lise PERARD <liseprd@hotmail.fr> 1738692437 +0100	commit (initial): Initial commit from Create Next App
+b4f41fdbfabbdc42d8f932c71e12a601ee79765c b4f41fdbfabbdc42d8f932c71e12a601ee79765c Lise PERARD <liseprd@hotmail.fr> 1738844071 +0100	checkout: moving from main to affichage_10_series
+b4f41fdbfabbdc42d8f932c71e12a601ee79765c a64426fe288c2856c9955837874e506efa71c656 Lise PERARD <liseprd@hotmail.fr> 1738844188 +0100	commit: affichage 10 séries front
+a64426fe288c2856c9955837874e506efa71c656 8593b8ab0736e888d2352e4eb9dd844ed98cee85 Lise PERARD <liseprd@hotmail.fr> 1738857111 +0100	commit: ajout fonction recherche
+8593b8ab0736e888d2352e4eb9dd844ed98cee85 8593b8ab0736e888d2352e4eb9dd844ed98cee85 Lise PERARD <liseprd@hotmail.fr> 1738862066 +0100	checkout: moving from affichage_10_series to figures_affichage_front
+8593b8ab0736e888d2352e4eb9dd844ed98cee85 e344c76b299ebea9c9c2de9729c6228dd26dabaf Lise PERARD <liseprd@hotmail.fr> 1738866943 +0100	commit: affichage figures et bouton random
+e344c76b299ebea9c9c2de9729c6228dd26dabaf 47119665a5c010953a5e06742777b32fadeb4b60 Lise PERARD <liseprd@hotmail.fr> 1738920025 +0100	commit: page front ok
