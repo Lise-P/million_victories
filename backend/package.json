@@ -4,7 +4,8 @@
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
-		"dev": "npx tsx watch --clear-screen=false ./src/index.ts"
+		"dev": "npx tsx watch --clear-screen=false ./src/index.ts",
+		"init-db": "npx tsx ./db/initdb.ts"
 	},
 	"keywords": [],
 	"author": "",

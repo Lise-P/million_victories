@@ -32,6 +32,7 @@ class ShowRepository {
 	async fetchAndStoreShows(): Promise<void> {
 		try {
 			const response = await fetch("https://api.tvmaze.com/shows");
+
 			const shows = await response.json();
 
 			for (const show of shows) {
@@ -40,7 +41,7 @@ class ShowRepository {
 				const [existing] = await connection
 					.promise()
 					.query<RowDataPacket[]>("SELECT * FROM shows WHERE id = ?", [id]);
-
+				// ajout d'un truncate table "shows"
 				if (existing.length === 0) {
 					await connection
 						.promise()
