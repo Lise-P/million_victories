@@ -21,7 +21,7 @@ Tout d'abord, clonez le repository sur votre machine :
 2) Ouvrir dans votre éditeur de code préféré :
 
 Ouvrez le projet dans votre éditeur de code (par exemple, VS Code) :
-    code .
+code .
 
 3) Configurer les variables d'environnement :
     Copiez le fichier .env.sample en .env et renseignez les informations nécessaires, notamment celles liées à votre base de données MySQL. Voici un exemple des variables que vous devrez définir :
@@ -55,19 +55,19 @@ Exécutez le script init-db pour créer la database et y insérer la table show.
 
     npm run init-db
 
-    Ce script va créer la base de données et les tables nécessaires à l'application.
+Ce script va créer la base de données et les tables nécessaires à l'application.
 
 7) Lancer l'application
    
 Lancez tout d'abord le terminal du backend, lancez le serveur avec la commande suivante :
 
-npm run dev
+    npm run dev
 
 Lancer le frontend :
 
 Ouvrez un autre terminal et allez dans le dossier frontend, puis lancez le serveur Next.js avec la commande suivante :
 
-npm run dev
+    npm run dev
 
 ## Technologies : 
 
