@@ -6,7 +6,7 @@ Fonctionnalités
     Liste des Séries : Affiche une liste de séries TV récupérées depuis le backend.
     Barre de Recherche : Permet aux utilisateurs de filtrer la liste en fonction du nom de la série.
     Bouton Série Aléatoire : Charge et affiche une série aléatoire au clic.
-    Affichage des Images : Affiche les images des séries dans la liste (pour une future mise à jour, voir "v2").
+    V2 : Affichage des Images, page dynamique avec le détail des séries etc.
 
 ## Installation : 
  ## A lire et suivre scrupuleusement pour voir ma super appli ;) 
