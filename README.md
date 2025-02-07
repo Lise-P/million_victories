@@ -10,6 +10,41 @@ Fonctionnalités
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+Installation
+
+Cloner ce dépôt et installer les dépendances :
+
+git clone <url-du-repository>
+cd <dossier-du-projet>
+npm install   # ou yarn install, ou pnpm install
+
+Variables d'environnement
+
+Dans le fichier .env.sample, vous trouverez des exemples de variables à définir dans votre propre fichier .env. 
+
+Par exemple :
+
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=yourpassword
+DB_NAME=movies_db
+API_URL=http://localhost:5000/api/shows
+
+Frontend (Next.js)
+
+    Next.js : Framework React utilisé côté frontend pour gérer le rendu côté serveur (SSR), la génération de pages statiques (SSG) et la gestion des routes.
+    React : La bibliothèque JavaScript pour la construction de l'interface utilisateur.
+    TypeScript : Superset de JavaScript qui ajoute une vérification des types statiques.
+    Tailwind CSS : Framework CSS utilitaire pour faciliter la gestion de la mise en page et du design.
+
+Backend (Node.js)
+
+    Node.js : Utilisé pour créer un serveur backend qui sert de point d'API pour l'application. Il se charge de la gestion des requêtes et des données (ici, la récupération des séries à partir d'une base de données MySQL).
+    Express (optionnel) : Si tu utilises Express pour ton serveur Node.js, il sera aussi mentionné ici.
+    MySQL : Base de données relationnelle utilisée pour stocker les séries.
+    dotenv : Pour gérer les variables d'environnement telles que les informations de connexion à la base de données.
+
 ## Getting Started
 
 First, run the development server:
