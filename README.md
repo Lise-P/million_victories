@@ -85,9 +85,9 @@ Backend (Node.js)
     MySQL : Base de données relationnelle utilisée pour stocker les séries.
     dotenv : Pour gérer les variables d'environnement telles que les informations de connexion à la base de données.
 
-
+--------------------------
     
-## Read me par défaut
+## Read me par défaut que j'ai laissé quand même mais l'installation doit se faire avec ma méthode ;) 
 ## Getting Started
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
